@@ -9,3 +9,11 @@ $paragraph-font-size: 16px;
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
  
+@font-face {
+    font-family: 'glyphterregular';
+    src: url('../../src/font/glyphter-webfont.woff2') format('woff2'),
+         url('../../src/font/glyphter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

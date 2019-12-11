@@ -10,25 +10,25 @@
 <body>
     <div class='container'>
             <div class='sidebar col col-1'>
-                    <div class='logo'>Just do it</div>
-                    <a class='active' href='#general'>
-                        <svg width='24' height='24' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
-                        <path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,0.4l-2.3,1.6l0.9-2.7l0.2-0.7
-                       L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"
-                       /></svg>
-                    General</a>
-                    <a href='#details'><img src='/src/images/icon/details.svg'> Details</a>
-                    <a href='#links'><img src='/src/images/icon/links.svg'>Links</a>
-                    <a href='#baners'><img src='/src/images/icon/banners.svg'>Baners</a>
-                    <a href='#personal-data'><img src='/src/images/icon/personaldata.svg'>Personal data</a>
-                    <a href='#payout'><img src='/src/images/icon/payout.svg'>Payout</a>
-                    <a href='#postback'><img src='/src/images/icon/postback.svg'>Postback</a>
+                    <div class='logo'>Just do it
+                    <a href="#menu" id="toggle"><span></span></a>
+                    </div>
+                    <div class='menu col'>
+                            <a href='#general'><span class='menu_icon'>&#75;</span><span class='menu_item'>General</span></a>
+                            <a href='#details'><span class='menu_icon'>&#74;</span><span class='menu_item'>Details</span></a>
+                            <a href='#links'><span class='menu_icon'>&#76;</span> <span class='menu_item'>Links</span></a>
+                            <a href='#baners'><span class='menu_icon'>&#71;</span><span class='menu_item'>Baners</span></a>
+                            <a href='#personal-data'><span class='menu_icon'>&#83;</span><span class='menu_item'>Personal data</span></a>
+                            <a href='#payout'><span class='menu_icon'>&#82;</span><span class='menu_item'>Payout</span></a>
+                            <a href='#postback'><span class='menu_icon'>&#85;</span><span class='menu_item'>Postback</span></a>
+                    </div>
+                    
             </div>
             <div class='col col-11'>
                 <div class='top-bar row'>menu</div>
                 <div class='main row'>dashboard</div>
             </div>
     </div>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
