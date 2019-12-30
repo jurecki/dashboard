@@ -1,31 +1,77 @@
+
+:root {
+    --color-first: #f58220;
+    --color-first-dark: #ff7500;
+    --color-first-light: #fab377;
+
+    --color-text-light: #fff;
+    --color-text-dark: #a6a6a6;
+    --color-text-primary: #7495ae;
+    --color-light-grey: #f2f2ef;
+    
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+}
+
 body {
-    font-family: $paragraph-font;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    background-image: linear-gradient(to right bottom, var(--color-first-light), var(--color-first-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
 }
 
 .container {
-    margin: 0px auto;
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-light-grey);
+    box-shadow: var(--shadow-dark);
+    min-height: 50rem;
     display: flex;
 }
-.row {
+
+.content {
     display: flex;
-    margin: 0 -15px;
-}
-
-
-.col {
-display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
-.col-1 {flex: 8.333%;}
-.col-2 {flex: 16.667%;}
-.col-3 {flex: 25%;}
-.col-4 {flex: 33.333%;}
-.col-5 {flex: 41.667%;}
-.col-6 {flex: 50%;}
-.col-7 {flex: 58.333%;}
-.col-8 {flex: 66.667%;}
-.col-9 {flex: 75%;}
-.col-10 {flex: 83.333%;}
-.col-11 {flex: 91.667%;}
-.col-12 {flex: 100%;}
+.sidebar {
+    flex: 0 0 20%;
+    background-color:#191919;
+}
+
+.header {
+    height: 7rem;
+    background-color: #fff;
+}
+
+.dashboard-view {
+    background-color: #fff;
+    margin: 1.25rem;
+    min-height: 88rem;
+}
+
+
+.user-nav__icon {
+    font-size: 3rem;
+}
