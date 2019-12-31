@@ -12,38 +12,91 @@
 <body>
    <div class="container">
        <nav class="sidebar">
-           sidebar Navigation
+          <div class="side-logo">
+              <p>Just do it</p>
+          </div>
+          <ul class="side-nav">
+              <li class="side-nav__item side-nav__item-active">
+                <a href="#" class="side-nav__link ">
+                    <div class="side-nav__icon icon-general"></div>
+                    <div class="side-nav__text">General</div>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                    <div class="side-nav__icon icon-details"></div>
+                    <div class="side-nav__text">Details</div>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                    <div class="side-nav__icon icon-links"></div>
+                    <div class="side-nav__text">Links</div>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                    <div class="side-nav__icon icon-banners"></div>
+                    <div class="side-nav__text">Banners</div>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                    <div class="side-nav__icon icon-personaldata"></div>
+                    <div class="side-nav__text">Personal data</div>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                    <div class="side-nav__icon icon-payout"></div>
+                    <div class="side-nav__text">Payout</div>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                    <div class="side-nav__icon icon-postback"></div>
+                    <div class="side-nav__text">Postback</div>
+                </a>
+              </li>
+          </ul>
+          <div class="side-footer">
+              <div class='side-footer__title'>your manager</div>
+              <div class="side-footer__user"> 
+                    <div class="side-footer__user-photo">
+                        <img src="images/user.jpg" alt="user_photo">
+                    </div>
+                    <span>Mikhael E.</span>
+              </div>
+         </div>
        </nav>
        <div class="content">
            <header class="header">
                <div class="user-nav">
-                   <div class="user-nav__wallet">
-                        <div class='user-nav__icon icon-wallet'>
-                        <div class="user-nav__wallet-count">
-                            1.500 USD
-                        </div>
-                        <div class="user-nav__icon">
-
-                        </div>
-                   </div>
-                   <div class="user-icon">
-
-                   </div>
-                   <div class="user-nav__account">
-                        <div class="user-nav__icon">
-
-                        </div>
-                        <div class="user-nav__name">
-                            Leonardo Dicaprio
-                        </div>
-                   </div>
-                   <div class="user-nav__icon">
-
-                   </div>
+                    <div class="user-nav__icon icon-wallet"></div>
+                    <div class="user-nav__wallet">$1,500.00</div>
+                    <div class="user-nav__icon icon-arrow-down"></div>
+                    <div class="user-nav__icon icon-notification"></div>
+                    <div class="user-nav__icon icon-profile"></div>
+                    <div class="user-nav__account">Leonardo Dicaprio</div>
+                    <div class="user-nav__icon icon-quit"></div>
                </div>
            </header>
            <main class="dashboard-view">
-               Dashboard View
+               <div class="dashboard-view__item">
+                    <div class="dashboard-view__item--title">general statistic</div>
+                    <div class="dashboard-view__item--date">
+                        <div class="dashboard-view__item--date-element">16.05.2016</div>
+                        <div class="dashboard-view__item--date-element ">16.05.2016 </div>
+                        <div class="dashboard-view__item--date-icon icon-calendar"></div>
+                        <button class="btn"></button>
+                    </div>
+                    <div class="dashboard-view__item--content">
+
+                    </div>
+               </div>
+               <div class="dashboard-view__item">
+                    <div class="dashboard-view__item--title">links</div>
+               </div>
            </main>
        </div>
    </div>

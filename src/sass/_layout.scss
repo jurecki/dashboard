@@ -30,7 +30,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.6;
     color: var(--color-text-dark);
     background-image: linear-gradient(to right bottom, var(--color-first-light), var(--color-first-dark));
@@ -56,22 +56,48 @@ body {
 }
 
 .sidebar {
-    flex: 0 0 20%;
+    flex: 0 0 15%;
     background-color:#191919;
 }
 
 .header {
-    height: 7rem;
+    height: 5rem;
     background-color: #fff;
+    display: flex;
 }
 
 .dashboard-view {
-    background-color: #fff;
-    margin: 1.25rem;
-    min-height: 88rem;
+
+    &__item {
+        background-color: #fff;
+        margin: 1.75rem;
+        min-height: 50rem;
+
+        &--title {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.75rem;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid var(--color-light-grey);
+        }
+
+        &--date {
+            display: flex;
+            justify-content: center;
+            margin: 1.2rem;
+            font-size: 1.75rem;
+            color: black;
+            border: 1px solid black;
+            width: 50%;
+            text-align: center;
+
+            &-element {
+                padding: .5rem 4rem .5rem 1rem;
+            
+            }
+        }
+    }
+    
 }
 
 
-.user-nav__icon {
-    font-size: 3rem;
-}
