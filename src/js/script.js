@@ -11,3 +11,14 @@ for( let i=0; i<links.length; i++) {
         links[i].classList.toggle('active');
     });
 }
+
+function toggleMenu(visible) {
+    document.querySelector('.side-nav').classList.toggle('active',visible)
+    document.querySelector('.side-logo-icon').classList.toggle('active', visible)
+}
+
+
+  document.querySelector('.hamburger').addEventListener('click', function(e) {
+    e.preventDefault();
+    toggleMenu()
+  });

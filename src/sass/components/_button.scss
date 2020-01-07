@@ -7,3 +7,23 @@
     cursor: pointer;
     box-shadow: .2rem .2rem .75rem rgba(0,0,0, .2);    
 }
+
+.btn-nav {
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    height: 2.5px;
+    width: 3.5rem;
+    
+    &::before,
+    &::after {
+        content: "";
+        background-color: #fff;
+        height: 2.5px;
+        width: 3.5rem;
+        display: block;
+    }
+
+    &::before { transform: translateY(-1rem);}
+    &::after { transform: translateY(1rem);}
+}
