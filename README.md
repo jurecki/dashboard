@@ -1,1 +1,1 @@
-https://jurecki.github.io/dashboard/
+https://jurecki.github.io/dashboard/dist/index.html
