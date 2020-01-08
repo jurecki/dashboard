@@ -52,7 +52,7 @@ const app = {
         const links = document.querySelectorAll('.side-nav__item');
 
         for (let link of links) {
-            console.log('link:',link)
+          
             link.addEventListener('click', function() {
 
                 for (let link of links) {
@@ -60,8 +60,6 @@ const app = {
                 }
 
                 this.classList.add('side-nav__item-active');
-
-                console.log(this);
 
                 const pageId= this.id;
                 const pageClassName = pageId.replace('','.')
@@ -82,8 +80,6 @@ const app = {
 
     init: function() {
         const thisApp = this;
-        console.log('*** App starting ***');
-        console.log('thisApp:', thisApp);
         
         thisApp.toogleMenu();
         thisApp.activePages();
@@ -93,38 +89,3 @@ const app = {
 }
 
 app.init();
- 
- /*
-const titleClickHandler = function(event) {
-    event.preventDefault();
-    const clickedElement = this;
-    console.log('lala');
-    console.log(clickedElement);
-
-   
-    for(let activeLink of activeLinks) {
-        activeLink.classList.remove('active')
-    }
-
-    this.classList.add('active');
-
-    const articles = optArticleSelector;
-
-    for(let article of articles) {
-        article.classList.remove('.product .active')
-        
-    }
- 
-    let idArticle = clickedElement.getAttribute('href').replace('#',"");
-    
-    document.getElementById(idArticle).classList.add('active');
-
-
-const links = document.querySelectorAll('.side-nav__link');
-
-    for (let link of links) {
-        link.addEventListener('click', titleClickHandler)
-    }
-
-}
-*/
