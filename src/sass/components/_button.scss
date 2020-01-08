@@ -1,9 +1,35 @@
 .btn {
     background-color: var(--color-first);
     padding: 1.25rem;
-    margin: .75rem;
+    margin: 2rem 1.25rem;
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    box-shadow: .2rem .2rem .75rem rgba(0,0,0, .2);    
+    &:hover {
+        box-shadow: .2rem .2rem .75rem rgba(0,0,0, .2);  
+    }
+    &:active {
+        transform: translate(2px, 2px);
+    }
+      
+}
+
+.btn-nav {
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    height: 2.5px;
+    width: 3.5rem;
+    
+    &::before,
+    &::after {
+        content: "";
+        background-color: #fff;
+        height: 2.5px;
+        width: 3.5rem;
+        display: block;
+    }
+
+    &::before { transform: translateY(-1rem);}
+    &::after { transform: translateY(1rem);}
 }

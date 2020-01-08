@@ -1,0 +1,39 @@
+.list {
+    list-style: none;
+    margin: 0 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+        flex: 0 0 100%;
+        padding: .5rem 2.25rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid var(--color-light-grey);
+        text-align: left;
+        &:hover {
+            background-color: var(--color-second-light);
+        }
+        &:hover .active{
+            visibility: visible;
+        }
+    }
+
+    .primary {
+        color: var(--color-first)
+    }
+
+    div {
+        width: 45%;
+    }
+
+    a,
+    a:link,
+    a:visited {
+        width: 45%;
+        color: var(--color-second);
+        text-decoration: none;
+    }
+    
+}
