@@ -3,7 +3,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
     border-bottom: 1px solid $color-light-grey;;
+
+    &:hover {
+        cursor: pointer;
+    }
 
     &__icon {
         font-size: 1.75rem;
@@ -14,11 +19,23 @@
     }
     
     &__wallet{
-    
+        margin-right: 1.2rem;
+        span {
+            font-size: 1.5rem;
+            @media only screen and (max-width: 768px) {
+            display: none;
+            };
+        }
     }
 
     &__account {
         font-size: 1.3rem;
         margin-right: 1.5rem;
+        span {
+            font-size: 1.5rem;
+            @media only screen and (max-width: 768px) {
+            display: none;
+            };
+        }
     }
 }

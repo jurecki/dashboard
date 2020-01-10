@@ -29,6 +29,15 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 55%;
+    }  
+
+    @media only screen and (max-width: 768px) {
+        font-size: 50%;
+    }  
+
 }
 
 body {
@@ -36,20 +45,17 @@ body {
     font-weight: 200;
     line-height: 1.6;
     color: var(--color-text-dark);
-    background-image: linear-gradient(to right bottom, var(--color-first-light), var(--color-first-dark));
-    background-size: cover;
-    background-repeat: no-repeat;
-
     min-height: 100vh;
 }
 
 .container {
-    max-width: 120rem;
-    margin: 8rem auto;
     background-color: var(--color-light-grey);
-    box-shadow: var(--shadow-dark);
-    min-height: 50rem;
     display: flex;
+
+    @media only screen and (max-width: 768px) {
+        position: relative;  
+    }
+    
 }
 
 .content {
@@ -61,6 +67,13 @@ body {
 .sidebar {
     flex: 0 0 15%;
     background-color:#191919;
+
+    @media only screen and (max-width: 768px) {
+        position: absolute; 
+        display: none;
+        top: 45px;
+        min-height: 100vh;
+    }
 }
 
 .header {
@@ -70,25 +83,27 @@ body {
 }
 .dashboard {
     min-height: 88rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    
 }
+
 .box {
     background-color: #fff;
-    margin: 1.75rem;
-    display: flex;
+    margin: 2.75rem;
+    display: none;
     flex-direction: column;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+
+
+    @media only screen and (max-width: 768px) {
+        margin: .5rem;  
+    }
 
     &.active { 
-        opacity: 1;
-        z-index:1;
+        display: flex;
+      
       }
 
     &__item {
+        flex: 1;
         margin: .5rem;
         font-weight: 400;
         font-size: 1.75rem;
@@ -98,6 +113,10 @@ body {
             border-bottom: 2px solid var(--color-light-grey);    
         }
         }
+
+        @media only screen and (max-width: 1000px) {
+            
+        };   
 
     h1 {
         text-transform: uppercase;
@@ -110,20 +129,26 @@ body {
 .hamburger {
     min-width: 50px;
     min-height: 50px;
-    display: flex;
     align-items: center;
+    padding-left: 10px;
+    margin-right: auto;
+    display: none;
+    @media only screen and (max-width: 768px) {
+        display: flex; 
+    }
+
 }
 
 
 .not-active {
-    visibility: hidden;
+    display: block;
 }
 
 ////col2
 
 .col-2 {
     list-style: none;
-    margin: 0 10rem;
+    margin: 0 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -134,7 +159,9 @@ body {
         display: flex;
         justify-content: space-between;
         border-bottom: 2px solid var(--color-light-grey);
+
+        @media only screen and (max-width: 768px) {
+            flex: 0 0 100%;
+        }
     }
-
-
 }

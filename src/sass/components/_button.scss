@@ -11,25 +11,37 @@
     &:active {
         transform: translate(2px, 2px);
     }
+
+    @media only screen and (max-width: 1000px) {
+        padding: .75rem 1.25rem;
+        margin: 1.5rem;
+        font-size: 1.5rem;
+    } 
+
+    @media only screen and (max-width: 768px) {
+        padding: .75rem 1.25rem;
+        margin: 1.5rem;
+        font-size: 1.2rem;
+    };
       
 }
 
 .btn-nav {
     border: none;
     border-radius: 0;
-    background-color: #fff;
-    height: 2.5px;
+    background-color: $color-light-grey;
+    height: 2px;
     width: 3.5rem;
     
     &::before,
     &::after {
         content: "";
-        background-color: #fff;
-        height: 2.5px;
+        background-color: $color-light-grey;
+        height: 2px;
         width: 3.5rem;
         display: block;
     }
 
-    &::before { transform: translateY(-1rem);}
-    &::after { transform: translateY(1rem);}
+    &::before { transform: translateY(-.9rem);}
+    &::after { transform: translateY(.7rem);}
 }
