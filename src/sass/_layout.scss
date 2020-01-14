@@ -38,6 +38,10 @@ html {
         font-size: 50%;
     }  
 
+    @media only screen and (max-width: 414px) {
+        font-size: 40%;
+    }  
+
 }
 
 body {
@@ -82,7 +86,9 @@ body {
     display: flex;
 }
 .dashboard {
-    min-height: 88rem;
+    @media only screen and (max-width: 320px) {
+        max-width: 320px;  
+    }
     
 }
 
@@ -95,6 +101,10 @@ body {
 
     @media only screen and (max-width: 768px) {
         margin: .5rem;  
+    }
+
+     @media only screen and (max-width: 500px) {
+        margin: 0rem;  
     }
 
     &.active { 
